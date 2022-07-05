@@ -173,7 +173,7 @@ class CircuitPythonMode(MicroPythonMode):
                     mounted_volumes = [x.split()[2] for x in mount_output]
                     for volume in mounted_volumes:
                         tail = os.path.split(volume)[-1]
-                        if tail.startswith(b"CIRCUITPY") or tail.startswith(
+                        if tail.startswith(b"Ziloo") or tail.startswith(b"CIRCUITPY") or tail.startswith(
                             b"PYBFLASH"
                         ):
                             device_dir = volume.decode("utf-8")
